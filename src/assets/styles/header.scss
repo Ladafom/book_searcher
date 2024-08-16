@@ -1,0 +1,51 @@
+@use './variables.scss' as *;
+
+.header{
+  background-color: $blue-color;
+  color: $light-pink-color;
+}
+
+.header__navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $light-pink-color;
+}
+
+.header__logo__img{
+  color: $light-pink-color;
+  font-size: 30px;
+}
+
+.header__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.header__content__title{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header__content__text{
+  max-width: 60%;
+  color: $black-color;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width:420px) {
+  .header__navigation{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

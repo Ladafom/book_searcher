@@ -1,0 +1,13 @@
+@use './variables.scss' as *;
+
+.list{
+  width: 70%;
+}
+
+.ant-typography{
+  color:$blue-color ;
+}
+
+.ant-list-header{
+  font-size: 18px;
+}

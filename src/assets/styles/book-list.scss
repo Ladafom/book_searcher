@@ -1,0 +1,24 @@
+.book-list__loader{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px ;
+}
+
+.book-list{
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.book-list__error{
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width:420px) {
+  .book-list{
+    gap: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+@use './variables.scss' as *;
+
+.book{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  & h3, p{
+    text-align: center;
+  }
+}
+
+.book__img-plug{
+  background: linear-gradient(90deg, transparentize($blue-color, 0.4), transparentize($coral-color, 0.6));
+  background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+  width: 100%;
+  height: calc(20vw);
+}
+
+.book__error{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.book__link{
+  & img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width:960px) {
+  .book{
+    width: 20%;
+  }
+  .book__img-plug{
+    height: calc(25vw);
+  }
+}
+@media (max-width:700px) {
+  .book{
+    width: 27%;
+    & h3{
+      font-size: 16px;
+    }
+    & p{
+      font-size: 14px;
+    }
+  }
+  .book__img-plug{
+    height: calc(32vw);
+  }
+}
+@media (max-width:540px) {
+  .book{
+    width: 40%;
+  }
+  .book__img-plug{
+    height: calc(40vw);
+  }
+}
+@media (max-width:420px) {
+  .book{
+    width: 45%;
+  }
+  .book__img-plug{
+    height: calc(55vw);
+  }
+}

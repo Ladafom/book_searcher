@@ -1,0 +1,10 @@
+@use './variables.scss' as *;
+
+.ant-select-arrow {
+  color: $blue-color !important;
+}
+
+.pagination{
+  flex-wrap: wrap;
+  justify-content: center;
+}
